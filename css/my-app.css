@@ -1,0 +1,125 @@
+
+#yun{
+    fill:white;
+}
+.bubble
+{
+    position: absolute;
+    left:500px;
+    top:200px;
+    width: 250px;
+    height: 210px;
+    padding: 20px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #7F7F7F solid 5px;
+    font-size:25px;
+}
+
+.bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 22px 15px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -22px;
+    top: 90px;
+}
+
+.bubble:before
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 19px 26px 19px 0;
+    border-color: transparent #7F7F7F;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -31px;
+    top: 86px;
+}
+#jingubang{
+    height:200px;
+    width:15px;
+    background-color:yellow;
+    position: absolute;
+    top:250px;
+    left:135px;
+    transform: rotate(-30deg);
+}
+#jingubang-m{
+    height:150px;
+    width:15px;
+    background-color: brown;
+    position: relative;
+    top:12%;
+}
+
+#quiz{
+    width:287px;
+    position: absolute;
+    left: 500px;
+    top: 130px;
+    height:50px;
+    border-radius: 5%;
+    background-color:#1B3D64;
+    color:white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+li:hover{
+    background-color: #1B3D64;
+    color:white;
+}
+
+#feedback{
+    position: absolute;
+    font-size: medium;
+    left:485px;
+    top:470px;
+    color:white;
+    width:100px;
+    height:30px;
+    margin:15px;
+    padding-left: 60px;
+    padding-top: 3px;
+}
+
+#next{
+    position: absolute;
+    font-size: medium;
+    left:695px;
+    top:490px;
+}
+
+#scores{
+    position: absolute;
+    left:575px;
+    top:520px;
+    margin:15px;
+    font-size: large;
+}
+
+
+.blink {
+    animation: blink-animation 0.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
